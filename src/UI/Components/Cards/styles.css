@@ -1,0 +1,20 @@
+.cardContainerRed {
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #a85252;
+}
+
+.cardContainerGreen {
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #356935;
+}
+
+.cardContainerYellow {
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #dacc52;
+}
