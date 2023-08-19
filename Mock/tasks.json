@@ -1,0 +1,20 @@
+[
+  {
+    "taskName": "Wake Up",
+    "taskColor": "Red",
+    "taskHour": "7:00",
+    "isCompleted": false
+  },
+  {
+    "taskName": "Eat Breakfast",
+    "taskColor": "Yellow",
+    "taskHour": "8:00",
+    "isCompleted": false
+  },
+  {
+    "taskName": "Stretch",
+    "taskColor": "Green",
+    "taskHour": "9:00",
+    "isCompleted": false
+  }
+]

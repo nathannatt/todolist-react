@@ -1,26 +1,19 @@
+import React, { useState, useEffect } from "react";
 import Cards from "../Cards";
 
 function Tasks({ taskName }) {
-  const tasksList = [
-    {
-      taskName: "Wake Up",
-      taskColor: "Red",
-      taskHour: "7:00",
-      isCompleted: false,
-    },
-    {
-      taskName: "Eat Breakfast",
-      taskColor: "Yellow",
-      taskHour: "8:00",
-      isCompleted: false,
-    },
-    {
-      taskName: "Stretch",
-      taskColor: "Green",
-      taskHour: "9:00",
-      isCompleted: false,
-    },
-  ];
+  const [tasksList, setTasksList] = useState();
+
+  const callApi = async () => {
+    const response = await fetch("../../../../Mock/tasks.json");
+    const body = await response.json();
+    setTasksList(body);
+  };
+
+  useEffect(() => {
+    callApi();
+  }, []);
+
   return (
     <div>
       <h1>{taskName}</h1>
